@@ -1,0 +1,26 @@
+
+
+@import "tailwindcss";
+
+
+
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  /*color */
+  --color-Neutral: #F9F8F5;
+  --color-primary: #1C1B1A;
+  --color-card: #2A2724;
+
+/* Fonts */
+    --font-headline: "Inter", sans-serif;
+  --font-sans: "Faustina", serif;
+
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
