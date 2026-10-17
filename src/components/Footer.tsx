@@ -22,7 +22,7 @@ export default function Footer() {
             <ul className="flex items-center gap-5 dark:text-Neutral">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/mohamed-zarea-/?isSelfProfile=true"
+                  href="https://www.linkedin.com/in/mohamed-hamdi-emirates?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                   className="flex items-center gap-1 cursor-pointer"
                   rel="noopener noreferrer"
                   target="_top"
@@ -32,7 +32,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="flex items-center gap-1 cursor-pointer">
+                <a
+                  className="flex items-center gap-1 cursor-pointer"
+                  href="mailto:Mohamedhamdi.emirates@gmail.com?subject=Hello%20Mohamed&body=Hi%20Mohamed,"
+                >
                   <Mail size={22} />
                   Email
                 </a>
