@@ -99,7 +99,7 @@ const letter = {
                 transition={{ duration: 0.5, delay: 2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                href="../../public/MOHAMED.pdf"
+                href="/public/MOHAMED.pdf"
                 download="MR_MOHAMED.pdf"
                 className="text-primary font-headline dark:text-Neutral border-2 px-2 py-1 rounded-sm hover:bg-primary hover:text-Neutral dark:hover:bg-Neutral dark:hover:text-primary transition-all duration-300 ease-in-out cursor-pointer flex items-center gap-2"
               >
