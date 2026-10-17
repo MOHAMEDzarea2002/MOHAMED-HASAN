@@ -2,9 +2,22 @@ import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 import Container from './Container';
 import {motion} from 'motion/react'
+import type {Theme} from '../types/types'
+
 export default function Nave() {
   const links = ['Summary', 'Experience','Achievements', 'Education', 'Skills' ];
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
+
+
+  const getInitialTheme = (): Theme => {
+    if (typeof window === 'undefined') return 'light';
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+
+
 const [activeLink,setActiveLink] = useState<string>(String)
 
 const DURATION = 4.5;

@@ -1,6 +1,9 @@
 // Pillars
 import type {LucideIcon} from 'lucide-react'
+
 import type React from 'react';
+
+export type Theme = 'light' | 'dark';
 export type PillarsData = {
   id: string;
   icon: React.ReactNode;
@@ -24,9 +27,6 @@ export  type Achievement = {
   icon: LucideIcon;
   description: string;
 };
-
-
-
 export type Skill = {
   id: string;
   name: string;
